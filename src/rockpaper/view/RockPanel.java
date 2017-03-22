@@ -83,16 +83,16 @@ public class RockPanel extends JPanel {
 		this.rockButton.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				computerLabel.setText(getRandomGameAnswer(rockController.getRock()));
+				computerLabel.setText(getRandomGameAnswer(rockController.getRock())); // rock listener
 			}
 		});
-		this.paperButton.addActionListener(new ActionListener() {
+		this.paperButton.addActionListener(new ActionListener() { // paper listener
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				computerLabel.setText(getRandomGameAnswer(rockController.getPaper()));
 			}
 		});
-		this.scissorsButton.addActionListener(new ActionListener() {
+		this.scissorsButton.addActionListener(new ActionListener() { // scissors listener
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				computerLabel.setText(getRandomGameAnswer(rockController.getScissors()));
